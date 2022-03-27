@@ -1,0 +1,47 @@
+body {
+  background: #fafafa;
+}
+
+.runing-girl {
+  position: absolute;
+  bottom: 0;
+  background-image: url(runing.gif);
+  width: 122px;
+  height: 150px;
+}
+
+.cactus {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  bottom: 0;
+  background-image: url(barreira.jpeg.jpeg);
+}
+
+.game-over {
+  text-align: center;
+  color: red;
+  margin: 50px 0;
+  font-family: arial;
+}
+
+@keyframes slideright {
+  from {
+      background-position: 70000%;
+  }
+  to {
+      background-position: 0%;
+  }
+}
+
+.background {
+  position: absolute;
+  bottom: 0px;
+  background-image: url('background.png');
+  background-repeat: repeat-x;
+  animation: slideright 600s infinite linear;
+  -webkit-animation: slideright 600s infinite linear;
+  width: 100%;
+  height: 100%;
+  background-color: #fafafaad;
+}
